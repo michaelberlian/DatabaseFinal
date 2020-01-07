@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane onMouseEntered="#Search" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SupplierController">
+    <children>
+        <TableView fx:id="SupplierTable" layoutY="90.0" prefHeight="228.0" prefWidth="600.0" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+            <columns>
+                <TableColumn fx:id="col_id" prefWidth="135.0" text="ID" />
+                <TableColumn fx:id="col_name" prefWidth="177.0" text="NAME" />
+                <TableColumn fx:id="col_address" prefWidth="287.0" text="ADDRESS" />
+            </columns>
+        </TableView>
+      <TextField fx:id="SupplierName" layoutX="12.0" layoutY="39.0" prefHeight="27.0" prefWidth="108.0" promptText="name" />
+      <Button fx:id="src" layoutX="258.0" layoutY="39.0" mnemonicParsing="false" onAction="#Search" prefHeight="27.0" prefWidth="84.0" text="Search" />
+      <TextField fx:id="SupplierAddress" layoutX="136.0" layoutY="39.0" prefHeight="27.0" prefWidth="108.0" promptText="address" />
+      <Button fx:id="SAdd" layoutX="370.0" layoutY="39.0" mnemonicParsing="false" onAction="#Add" prefHeight="27.0" prefWidth="78.0" text="Add" />
+      <Button fx:id="SLoad" layoutX="25.0" layoutY="346.0" mnemonicParsing="false" onAction="#Load" prefHeight="27.0" prefWidth="78.0" text="LOAD" />
+      <TextField fx:id="SupplierNameLoad" layoutX="165.0" layoutY="346.0" prefHeight="27.0" prefWidth="108.0" promptText="name" />
+      <TextField fx:id="SupplierAddressLoad" layoutX="286.0" layoutY="346.0" prefHeight="27.0" prefWidth="108.0" promptText="address" />
+      <Button fx:id="SEdit" layoutX="406.0" layoutY="324.0" mnemonicParsing="false" onAction="#Edit" prefHeight="27.0" prefWidth="78.0" text="EDIT" />
+      <Button fx:id="SDelete" layoutX="406.0" layoutY="361.0" mnemonicParsing="false" onAction="#Delete" prefHeight="27.0" prefWidth="78.0" text="DELETE" />
+      <Label fx:id="SLabel" layoutX="492.0" layoutY="331.0" prefHeight="50.0" prefWidth="96.0" textAlignment="CENTER" />
+      <Label fx:id="SupplierIdLoad" layoutX="112.0" layoutY="345.0" prefHeight="27.0" prefWidth="39.0" />
+    </children>
+</AnchorPane>

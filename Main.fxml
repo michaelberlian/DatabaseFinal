@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="Item" layoutX="66.0" layoutY="122.0" mnemonicParsing="false" onAction="#Item" prefHeight="62.0" prefWidth="88.0" text="Item" />
+      <Button fx:id="Employee" layoutX="66.0" layoutY="217.0" mnemonicParsing="false" onAction="#Employee" prefHeight="62.0" prefWidth="88.0" text="Employee" />
+      <Button fx:id="Supplier" layoutX="203.0" layoutY="122.0" mnemonicParsing="false" onAction="#Supplier" prefHeight="62.0" prefWidth="88.0" text="Supplier" />
+      <Button fx:id="Customer" layoutX="203.0" layoutY="217.0" mnemonicParsing="false" onAction="#Customer" prefHeight="62.0" prefWidth="88.0" text="Costumer" />
+      <Button fx:id="Sale" layoutX="347.0" layoutY="122.0" mnemonicParsing="false" onAction="#Sale" prefHeight="62.0" prefWidth="88.0" text="Sale" />
+      <Button fx:id="Purchase" layoutX="347.0" layoutY="217.0" mnemonicParsing="false" onAction="#Purchase" prefHeight="62.0" prefWidth="88.0" text="Purchase" />
+      <Button fx:id="Username" layoutX="164.0" layoutY="312.0" mnemonicParsing="false" onAction="#Username" prefHeight="29.0" prefWidth="167.0" text="Username" />
+   </children>
+</AnchorPane>

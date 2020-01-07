@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane onMouseEntered="#Load" prefHeight="477.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PurchaseDetailController">
+    <children>
+        <TableView fx:id="PurchaseDetailTable" layoutX="92.0" layoutY="51.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="125.0">
+            <columns>
+                <TableColumn fx:id="col_sdid" minWidth="0.0" prefWidth="71.0" text="Detail ID" />
+                <TableColumn fx:id="col_id" prefWidth="69.0" text="Item ID" />
+                <TableColumn fx:id="col_name" prefWidth="138.0" text="Item Name" />
+                <TableColumn fx:id="col_uprice" prefWidth="104.0" text="Unit Price" />
+                <TableColumn fx:id="col_quantity" prefWidth="53.0" text="Quantity" />
+                <TableColumn fx:id="col_price" minWidth="0.0" prefWidth="107.0" text="Price" />
+                <TableColumn fx:id="col_employeename" prefWidth="136.0" text="Employee Name" />
+            </columns>
+        </TableView>
+        <Label fx:id="PurchaseID" layoutX="24.0" layoutY="36.0" prefHeight="17.0" prefWidth="82.0" />
+        <Label fx:id="SupplierName" layoutX="121.0" layoutY="84.0" prefHeight="17.0" prefWidth="117.0" />
+        <TextField fx:id="SupplierID" layoutX="24.0" layoutY="79.0" prefHeight="27.0" prefWidth="89.0" />
+        <TextField fx:id="DatenTime" layoutX="117.0" layoutY="31.0" prefHeight="27.0" prefWidth="157.0" />
+        <Button fx:id="Edit" layoutX="296.0" layoutY="17.0" mnemonicParsing="false" onAction="#Edit" prefHeight="27.0" prefWidth="157.0" text="Edit" />
+        <Label fx:id="SDLabel" layoutX="227.0" layoutY="92.0" prefHeight="27.0" prefWidth="321.0" />
+        <Button fx:id="delete" layoutX="583.0" layoutY="17.0" mnemonicParsing="false" onAction="#Delete" prefHeight="27.0" prefWidth="68.0" text="DELETE" />
+        <Button fx:id="View" layoutX="175.0" layoutY="419.0" mnemonicParsing="false" onAction="#View" prefHeight="27.0" prefWidth="141.0" text="View" />
+        <Button fx:id="Add" layoutX="296.0" layoutY="61.0" mnemonicParsing="false" onAction="#Add" prefHeight="27.0" prefWidth="157.0" text="Add Item" />
+        <Label layoutX="384.0" layoutY="424.0" prefHeight="27.0" prefWidth="98.0" text="Grand Total : Rp." />
+        <Label fx:id="grand" layoutX="488.0" layoutY="424.0" prefHeight="27.0" prefWidth="133.0" text="0" textAlignment="RIGHT" />
+      <Label layoutX="24.0" layoutY="17.0" prefHeight="17.0" prefWidth="82.0" text="Purchase ID" />
+      <Label layoutX="24.0" layoutY="58.0" prefHeight="17.0" prefWidth="82.0" text="Supplier ID" />
+    </children>
+</AnchorPane>
